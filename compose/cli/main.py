@@ -510,8 +510,8 @@ class TopLevelCommand(object):
                 size = human_readable_file_size(image_config['Size'])
                 rows.append([
                     container.name,
-                    repo_tags[0],
-                    repo_tags[1],
+                    ''.join(repo_tags[:-1]),
+                    repo_tags[-1],
                     image_id,
                     size
                 ])
